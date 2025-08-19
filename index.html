@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="app-title" style="cursor: pointer;">Fake Store</h1>
+            <button id="add-product-btn" class="btn">Adicionar Novo Produto</button>
+        </header>
+
+        <main id="home-page" class="page active">
+            <h2>Todos os Produtos</h2>
+            <div id="product-list">
+                <p>Carregando produtos...</p>
+            </div>
+        </main>
+
+        <main id="product-detail-page" class="page">
+            <img id="product-image" src="" alt="Imagem do produto">
+            <div class="details-content">
+                <h2 id="product-title"></h2>
+                <p id="product-price"></p>
+                <p id="product-description"></p>
+                <div class="details-actions">
+                    <button id="back-to-home-btn" class="btn btn-secondary">Voltar</button>
+                    <button id="edit-from-detail-btn" class="btn">Editar</button>
+                    <button id="delete-from-detail-btn" class="btn btn-danger">Excluir</button>
+                </div>
+            </div>
+        </main>
+
+        <main id="manage-product-page" class="page">
+            <h2 id="form-title"></h2>
+            <div class="form-container">
+                <form id="product-form">
+                    <input type="hidden" id="product-id">
+                    <div class="form-group">
+                        <label for="product-name">Nome do Produto</label>
+                        <input type="text" id="product-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-price-input">Preço</label>
+                        <input type="number" step="0.01" id="product-price-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-description-input">Descrição</label>
+                        <textarea id="product-description-input" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-image-url">URL da Imagem</label>
+                        <input type="url" id="product-image-url" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-category">Categoria</label>
+                        <input type="text" id="product-category" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" id="cancel-btn" class="btn btn-secondary">Cancelar</button>
+                        <button type="submit" class="btn">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
