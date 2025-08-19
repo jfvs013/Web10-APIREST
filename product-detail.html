@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store - Detalhes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" class="navbar-brand">Fake Store</a>
+            <ul class="navbar-nav">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="manage-product.html" class="nav-link">Gerenciar Produtos</a></li>
+            </ul>
+        </nav>
+
+        <main id="product-detail-page" class="page active">
+            <img id="product-image" src="" alt="Imagem do produto">
+            <div class="details-content">
+                <h2 id="product-title"></h2>
+                <p id="product-price"></p>
+                <p id="product-description"></p>
+                <div class="details-actions">
+                    <button id="back-to-home-btn" class="btn btn-secondary">Voltar</button>
+                    <button id="edit-from-detail-btn" class="btn">Editar</button>
+                    <button id="delete-from-detail-btn" class="btn btn-danger">Excluir</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="modal-message"></p>
+            <div class="modal-actions">
+                <button id="modal-ok-btn" class="btn btn-secondary">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
